@@ -2,16 +2,32 @@ require "randeaux/version"
 
 module Randeaux
 
-    def randeaux(arry, n=1)
-      output_arry = []
+  def randeaux(data_structure, n=1)
+    output_arry = []
+    if data_structure.class.to_s == 'Hash'
       n.times do
-       output_arry << arry.sample
+       output_arry << data_structure.values.sample
       end
-      output_arry
+    elsif data_structure.class.to_s == 'Array'
+      n.times do
+       output_arry << data_structure.sample
+      end
     end
+    output_arry
+  end
+
+  def randeaux_index(data_structure, n=1)
+    output_arry = []
+    if data_structure.class.to_s == 'Hash'
+      n.times do
+       output_arry << data_structure.keys.sample
+      end
+    elsif data_structure.class.to_s == 'Array'
+      n.times do
+       output_arry << data_structure.index(data_structure.sample)
+      end
+    end
+    output_arry
+  end
 
 end
-
-# [1,2,3].randeaux(2)
-
-# [2,2]
