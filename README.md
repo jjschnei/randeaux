@@ -1,28 +1,12 @@
-# Randeaux
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/randeaux`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'randeaux'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install randeaux
-
 ## Usage
 
-TODO: Write usage instructions here
+Make sure to include the randeaux gem.
+
+Randeaux returns an array of random elements, indexes, keys and values selected at random from an array or hash.
+
+The randeaux methods takes two arguments:  the data structure you wish to sample (hash or array) and an optional argument for the number of elements you wish to be returned.  By default, randeaux will return one random element from the data structure.
+
+The randeaux_index method takes the same arguments, except it returns random indexes instead of random values.
 
 ## Development
 
@@ -32,7 +16,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/randeaux.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jjschnei/randeaux.
 
 
 ## License
